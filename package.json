@@ -2,6 +2,11 @@
   "name": "@pmwood/learnstorybook-design-system",
   "version": "0.1.0",
   "private": false,
+  "description": "Storybook design systems tutorial",
+  "main": "dist/index.js",
+  "repository": "https://github.com/pmschartz/learnstorybook-design-system.git",
+  "author": "Paige Wood <pm.schartz@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -21,7 +26,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --project-token=29f6c846af8c",
-    "build-storybook-docs": "build-storybook -s public --docs"
+    "build-storybook-docs": "build-storybook -s public --docs",
+    "release": "auto shipit --base-branch=main"
   },
   "eslintConfig": {
     "extends": [
@@ -74,10 +80,5 @@
     "chromatic": "^5.10.0-canary.0",
     "cross-env": "^7.0.3",
     "prettier": "^2.3.2"
-  },
-  "description": "Storybook design systems tutorial",
-  "main": "dist/index.js",
-  "repository": "https://github.com/pmschartz/learnstorybook-design-system.git",
-  "author": "Paige Wood <pm.schartz@gmail.com>",
-  "license": "MIT"
+  }
 }
